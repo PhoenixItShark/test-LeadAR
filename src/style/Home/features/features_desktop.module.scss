@@ -1,0 +1,122 @@
+@use "/src/style/utils/variables" as *;
+@use "/src/style/utils/mixins" as *;
+@use "/src/style/utils/media_breakpoint" as *;
+
+@include desktop() {
+  .feature_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Simplified margin syntax for brevity */
+    margin: 170px 315px 0px 315px;
+  }
+
+  .card_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* Added gap to replace flex gap from removed card_section */
+    gap: 46px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .title {
+    @include text-huge();
+    /* Simplified margin syntax */
+    margin: 0 0 46px 0;
+    text-align: center;
+  }
+
+  .card {
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    border-radius: $corner-radius-medium_big;
+    background-color: $color-white;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    padding: 35px;
+    flex-direction: column;
+    /* Added padding for better content spacing */
+
+    /* Fixed nth-child selectors to properly place cards in 2x2 grid */
+    &:nth-child(1) {
+      grid-column: 1;
+      grid-row: 1;
+
+      .head_line_container {
+        margin-bottom: 4px; /* Specific margin for card 1 */
+      }
+    }
+    &:nth-child(2) {
+      grid-column: 2;
+      grid-row: 1;
+
+      .head_line_container {
+        margin-bottom: 24px; /* Specific margin for card 2 */
+      }
+    }
+    &:nth-child(3) {
+      grid-column: 2;
+      grid-row: 2;
+
+      .head_line_container {
+        margin-bottom: 13px; /* Specific margin for card 3 */
+      }
+    }
+    &:nth-child(4) {
+      grid-column: 3;
+      grid-row: 2;
+
+      .head_line_container {
+        margin-bottom: 14px; /* Specific margin for card 4 */
+      }
+    }
+  }
+
+  .head_line_container {
+    color: $color-text-black;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .card_title {
+    color: $color-text-black;
+    @include text-bold();
+    margin: 0;
+  }
+
+  .card_text {
+    margin: 0;
+    color: $color-text-black;
+    @include text-medium();
+  }
+
+  .gradient_rectangle {
+    position: absolute;
+    top: 2352px;
+    left: 84px;
+    border-radius: 360px;
+    width: 720px;
+    height: 720px;
+    filter: blur(500px);
+    background: linear-gradient(
+      180deg,
+      rgba(52, 148, 230, 0.2) 0%,
+      rgba(236, 110, 173, 0.2) 100%
+    );
+    z-index: -999;
+
+    &:nth-last-child(1) {
+      top: 2553px;
+      left: 836px;
+      border-radius: 253px;
+      width: 474px;
+      height: 473px;
+      filter: blur(100px);
+      background: linear-gradient(180deg, #3494e6 0%, #ec6ead 100%);
+    }
+  }
+}

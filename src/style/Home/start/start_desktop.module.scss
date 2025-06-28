@@ -1,0 +1,9 @@
+@use "/src/style/utils/variables" as *;
+@use "/src/style/utils/mixins" as *;
+@use "/src/style/utils/media_breakpoint" as *;
+
+@include desktop() {
+    .start_container {
+        display: none;
+    }
+}

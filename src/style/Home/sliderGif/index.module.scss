@@ -1,0 +1,6 @@
+@use '/src/style/utils/variables' as *;
+@use '/src/style/utils/mixins' as *;
+
+
+@use './sliderGif_desktop.module.scss';
+@use './sliderGif_mobile.module.scss';

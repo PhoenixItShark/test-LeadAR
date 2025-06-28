@@ -1,0 +1,8 @@
+@use '/src/style/utils/variables' as *;
+@use '/src/style/utils/mixins' as *;
+@use '/src/style/utils/container'as *;
+@use '/src/style/utils/media_breakpoint' as *;
+
+
+@use './header_desktop.module.scss';
+@use './header_mobile.module.scss';

@@ -1,0 +1,6 @@
+@use '/src/style/utils/variables' as *;
+@use '/src/style/utils/mixins' as *;
+
+
+@use './community-desktop.module.scss';
+@use './community_mobile.module.scss';

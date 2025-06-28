@@ -1,0 +1,6 @@
+@use '/src/style/utils/variables' as *;
+@use '/src/style/utils/mixins' as *;
+
+
+@use './footer_desktop.module.scss';
+@use './footer_mobile.module.scss';

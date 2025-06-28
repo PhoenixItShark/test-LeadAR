@@ -1,0 +1,33 @@
+@use "/src/style/utils/variables" as *;
+@use "/src/style/utils/mixins" as *;
+@use "/src/style/utils/media_breakpoint" as *;
+
+@include mobile() {
+  .footer_container {
+    background-color: $color-white;
+    margin-top: 60px;
+    padding: 52px 35px;
+    padding-right: 0;
+  }
+  .footer_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    @include text-medium-bold();
+    margin-bottom: 12px;
+  }
+  .link {
+    @include text-mobile-medium();
+    margin-bottom: 12px;
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+  }
+}

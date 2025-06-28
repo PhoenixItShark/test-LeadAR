@@ -1,0 +1,69 @@
+@use "/src/style/utils/variables" as *;
+@use "/src/style/utils/mixins" as *;
+@use "/src/style/utils/media_breakpoint" as *;
+
+@include mobile() {
+  .feature_container {
+    margin-top: 55px;
+    width: 100%;
+  }
+  .title {
+    @include text-mobile-huge();
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .slide {
+    @include flex-container();
+  }
+//   .card_wrapper {
+    
+//   }
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+  .card {
+    width: 280px;
+    height: 230px;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    border-radius: $corner-radius-small-medium;
+    background-color: $color-white;
+    display: flex;
+    padding: 28px 24px;
+    flex-direction: column;
+  }
+  .head_line_container {
+    color: $color-text-black;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  .card_title {
+    @include text-mobile-mediumPlus-bold();
+  }
+  .img_wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .img {
+    margin-top: 60px;
+    width: 100%;
+    height: 305px;
+    object-fit: cover;
+    border-radius: $corner-radius-small-medium;
+    max-width: 280px; // Условно
+  }
+  .gradient_rectangle {
+    position: absolute;
+    top: 2800px;
+    left: 0;
+    border-radius: 253px;
+    width: 100%;
+    height: 356px;
+    filter: blur(100px);
+    background: linear-gradient(180deg, #3494e6 0%, #ec6ead 100%);
+    z-index: -999;
+}
+}
