@@ -1,0 +1,38 @@
+@use "/src/style/utils/variables" as *;
+@use "/src/style/utils/mixins" as *;
+@use "/src/style/utils/media_breakpoint" as *;
+
+@include desktop() {
+  .slider_gif_container {
+    margin-top: 128px;
+  }
+
+  .slider_item {
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.05);
+    border-radius: $corner-radius-medium_big;
+    width: 673px;
+    height: 600px;
+    object-fit: cover;
+  }
+
+  .slide {
+    margin-right: 40px;
+    width: 673px;
+  }
+
+  .gradient_rectangle {
+    position: absolute;
+    top: 889px;
+    left: 1200px;
+    border-radius: 360px;
+    width: 720px;
+    height: 720px;
+    filter: blur(100px);
+    background: linear-gradient(
+      180deg,
+      rgba(52, 148, 230, 0.5) 0%,
+      rgba(236, 110, 173, 0.5) 100%
+    );
+    z-index: -999;
+  }
+}

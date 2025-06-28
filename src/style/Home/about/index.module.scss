@@ -1,0 +1,5 @@
+@use '/src/style/utils/variables' as *;
+@use '/src/style/utils/mixins' as *;
+
+@use './about_desktop.module.scss';
+@use './about_mobile.module.scss';

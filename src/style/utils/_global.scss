@@ -1,0 +1,15 @@
+@use '../utils/variables' as *;
+
+body {
+    background-color: $color-background;
+    font-family: 'Trebuchet MS', sans-serif;
+    
+
+}
+html, body, #root {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}

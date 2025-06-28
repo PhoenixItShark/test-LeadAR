@@ -1,4 +1,7 @@
-@use './utils/global.scss';
-@use './utils/reset.scss';
-@use './utils/variables.scss';
-@use './utils/mixins.scss';
+//--Index.scss--
+//Utils
+@use './utils/global';
+@use 'normalize.css';
+@use './utils/mixins';
+@use './utils/container';
+@use './utils/reset';

@@ -1,0 +1,6 @@
+@use '/src/style/utils/variables' as *;
+@use '/src/style/utils/mixins' as *;
+
+
+@use './discover_desktop.module.scss';
+@use './discover_mobile.module.scss';

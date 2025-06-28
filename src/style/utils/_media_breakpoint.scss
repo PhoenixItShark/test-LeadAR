@@ -1,0 +1,15 @@
+@use '/src/style/utils/variables' as *;
+@use '/src/style/utils/mixins' as *;
+
+
+@mixin mobile {
+  @media screen and (min-width: $breakpoint_mobile) and (max-width: $breakpoint_desktop) {
+    @content;
+  }
+};
+
+@mixin desktop {
+  @media screen and (min-width: $breakpoint_desktop) {
+    @content;
+  }
+}

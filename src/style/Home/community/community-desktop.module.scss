@@ -1,0 +1,47 @@
+@use "/src/style/utils/variables" as *;
+@use "/src/style/utils/mixins" as *;
+@use "/src/style/utils/media_breakpoint" as *;
+
+@include desktop() {
+  .community_container {
+    margin-top: 57px;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title {
+    text-align: center;
+    width: 1131px;
+    margin: 0px;
+    @include text-huge();
+    color: $color-black;
+  }
+  .subTitle {
+    text-align: center;
+    width: 558px;
+    margin: 0px;
+    margin-top: 26px;
+    @include text-big();
+    color: $color-black;
+    margin-bottom: 36px;
+  }
+  .button {
+    margin-top: 60px;
+    @include button(360px,70px);
+  }
+
+  .slider_item {
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.05);
+    border-radius: $corner-radius-medium_big;
+    width: 435px;
+    height: 410px;
+    object-fit: cover;
+  }
+
+  .slide {
+    margin-right: 20px;
+    width: 435px;
+  }
+}

@@ -1,0 +1,140 @@
+@use "/src/style/utils/variables" as *;
+@use "/src/style/utils/mixins" as *;
+@use "/src/style/utils/media_breakpoint" as *;
+
+@include mobile() {
+  .header_container {
+    margin-top: 53px;
+    width: 100%;
+    height: 670px;
+  }
+  .header_wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .log_in_button {
+    display: none;
+  }
+  .title {
+    margin-bottom: 14px;
+    @include text-mobile-huge();
+  }
+  .subTitle {
+    @include text-mobile-medium();
+    margin-bottom: 40px;
+  }
+
+  .form_desktop {
+    display: none;
+  }
+  .form_wrapper {
+    height: auto;
+    width: 100%;
+  }
+  .form_mobile {
+    background-color: $color-white;
+    border-radius: 17px;
+    padding: 30px 36px 31px 36px;
+    display: flex;
+    flex-direction: column;
+  }
+  .gender_wrapper {
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+    gap: 1px;
+  }
+  .gender_select {
+    @include flex-container();
+    @include text-mobile-small();
+    font-size: 12px;
+    color: $color-grey;
+    height: 100%;
+    width: 100%;
+    background-color: $color-white-grey;
+    &:nth-child(1) {
+      border-radius: 6px 0 0 6px;
+    }
+    &:nth-child(2) {
+      border-radius: 0 6px 6px 0;
+    }
+  }
+  .label {
+    @include text-mobile-small();
+    font-size: 12px;
+    margin-bottom: 7px;
+  }
+  .form_input {
+    width: 100%;
+    height: 35px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    @include text-mobile-small();
+    font-size: 12px;
+    color: $color-grey;
+    box-shadow: inset 0 0 10px 0 rgba(38, 31, 123, 0.05);
+    background: $color-white-grey;
+    border-radius: $corner-radius-small;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    &::placeholder{
+      color: $color-grey;
+    };
+    &:focus-visible {
+      outline: 2px solid $color-blue;
+    };
+  }
+  .terms_wrapper {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    gap: 13px;
+    margin-bottom: 18px;
+  }
+  .checkbox {
+    appearance: none;
+    box-sizing: border-box;
+    width: 18px;
+    height: 18px;
+    background-color: $color-white-grey;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:checked {
+      background-color: $color-blue;
+    }
+  }
+
+  .terms {
+    @include text-mobile-small();
+    color: $color-grey;
+    width: 80%;
+  }
+  .button {
+    @include button(100%, 40px) {
+      @include text-button-mobile_2();
+      margin-bottom: 55px;
+    }
+  }
+  .slide_wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.slide {
+  width: 18px;
+  height: 3px;
+  background-color: $color-light-blue;
+  opacity: 20%;
+  border-radius: 5px;
+}
+
+.active {   
+  opacity: 100%;
+}
+}

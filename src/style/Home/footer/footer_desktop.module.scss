@@ -1,0 +1,48 @@
+@use "/src/style/utils/variables" as *;
+@use "/src/style/utils/mixins" as *;
+@use "/src/style/utils/media_breakpoint" as *;
+
+@include desktop() {
+  .footer_container {
+    background-color: $color-white; // или $color-white-grey, если используешь переменные
+    padding: 103px 0 90px 0;
+  }
+
+  .footer_wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 126px; // или подгони по макету
+    flex-wrap: wrap;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    &:nth-child(1) {
+      margin-right: 266px;
+    }
+  }
+
+  .title {
+    margin: 0px;
+    @include text-bold();
+    font-size: 22px;
+    color: $color-text-black;
+    margin-bottom: 39px;
+  }
+
+  .link {
+    @include text-medium();
+    color: $color-text-black;
+    font-size: 22px;
+    margin: 0px;
+    color: #111;
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-bottom: 21px;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

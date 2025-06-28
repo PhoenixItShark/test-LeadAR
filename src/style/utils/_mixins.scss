@@ -1,0 +1,123 @@
+@use './variables' as *;
+
+@mixin flex-container() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin button($width, $height,$max-width: null, $padding: 0, ) {
+    width: $width;
+    height: $height;
+    padding: $padding;
+    @if $max-width != null {
+    max-width: $max-width;
+    }
+    // @include flex-container();
+    @include text-bold();
+    border: none;
+    outline: none;
+    box-shadow: 0 20px 30px 0 rgba(88, 79, 205, 0.2);
+    color: $color-white;
+    border-radius: $corner-radius-small;
+    background: $line-gradient;
+    cursor: pointer;
+    @content
+};
+
+
+//button
+@mixin text-button-mobile_1() {
+    font-weight: bold;
+    font-size: 20px;
+    color: $color-white;
+}
+
+@mixin text-button-mobile_2() {
+    font-weight: bold;
+    font-size: 14px;
+    color: $color-white;
+}
+@mixin text-button-desktop_1() {
+    font-weight: bold;
+    font-size: 24px;
+    color: $color-white;
+}
+
+
+//small
+@mixin text-mobile-small() {
+    font-weight: 400;
+    font-size: 10px;
+    color: $color-text-black;
+}
+@mixin text-small() {
+    font-weight: 400;
+    font-size: 14px;
+    color: $color-text-black;
+}
+
+//medium
+@mixin text-medium() {
+    font-weight: 400;
+    font-size: 18px;
+    color: $color-text-black;
+}
+@mixin text-mobile-medium() {
+    font-weight: 400;
+    font-size: 16px;
+    color: $color-text-black;
+}
+@mixin text-mobile-mediumPlus-bold() {
+    font-weight: 700;
+    font-size: 18px;
+    color: $color-text-black;
+}
+
+//bold
+@mixin text-mobile-bold() {
+    font-weight: 700;
+    font-size: 20px;
+    color: $color-text-black;
+}
+@mixin text-bold() {
+    font-weight: bold;
+    font-size: 24px;
+    color: $color-text-black;
+}
+@mixin text-medium-bold() {
+    font-weight: bold;
+    font-size: 16px;
+    color: $color-text-black;
+}
+
+
+//huge
+@mixin text-mobile-huge() {
+    font-weight: bold;
+    font-size: 26px;
+    color: $color-text-black;
+}
+@mixin text-huge() {
+    font-weight: bold;
+    font-size: 56px;
+    color: $color-text-black;
+}
+
+//big
+@mixin text-big() {
+    font-weight: 400;
+    font-size: 24px;
+    color: $color-text-black;
+}
+
+
+
+
+//cera small
+@mixin cera-small() {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Cera Pro';
+    color: $color-text-black;
+}
