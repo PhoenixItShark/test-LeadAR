@@ -1,6 +1,5 @@
-@use '/src/style/utils/variables' as *;
-@use '/src/style/utils/mixins' as *;
+@use "/src/style/utils/variables" as *;
+@use "/src/style/utils/mixins" as *;
 
-
-@use './vision_desktop.module.scss';
-@use './vision_mobile.module.scss';
+@use "./vision_desktop.module.scss";
+@use "./vision_mobile.module.scss";

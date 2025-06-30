@@ -15,9 +15,9 @@
   .slide {
     @include flex-container();
   }
-//   .card_wrapper {
-    
-//   }
+  //   .card_wrapper {
+
+  //   }
   .icon {
     width: 24px;
     height: 24px;
@@ -65,5 +65,5 @@
     filter: blur(100px);
     background: linear-gradient(180deg, #3494e6 0%, #ec6ead 100%);
     z-index: -999;
-}
+  }
 }

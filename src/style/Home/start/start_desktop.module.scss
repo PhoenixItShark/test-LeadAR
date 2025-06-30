@@ -3,7 +3,7 @@
 @use "/src/style/utils/media_breakpoint" as *;
 
 @include desktop() {
-    .start_container {
-        display: none;
-    }
+  .start_container {
+    display: none;
+  }
 }

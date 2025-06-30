@@ -1,12 +1,13 @@
-@use '../utils/variables' as *;
+@use "../utils/variables" as *;
 
 body {
-    background-color: $color-background;
-    font-family: 'Trebuchet MS', sans-serif;
-    
-
+  background-color: $color-background;
+  font-family: "Trebuchet MS", sans-serif;
+  overflow-x: hidden;
 }
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
 }
 

@@ -7,16 +7,15 @@
     margin-top: 217px;
   }
   .vision_wrapper {
-    margin-bottom: -5px;
-    display: flex;
-    align-items: end;
-    justify-content: end;
-  }
-  .content_wrapper {
     display: flex;
     align-items: center;
+    justify-content: end;
   }
-  .wrapper {
+  // .content_wrapper {
+  //   display: flex;
+  //   align-items: center;
+  // }
+  .text_wrapper {
     width: 789px;
   }
   .title {
@@ -24,11 +23,11 @@
     margin: 0px;
     @include text-huge();
     color: $color-text-black;
+    margin-bottom: 26px;
   }
   .subTitle {
     width: 70%;
     margin: 0px;
-    margin-top: 26px;
     @include text-big();
     font-size: 21px;
     color: $color-text-black;
@@ -36,10 +35,13 @@
   }
   .img_wrapper {
     position: relative;
-  }
-  .img {
     width: 750px;
     height: 818px;
+    overflow: hidden;
+  }
+  .img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
   .message_wrapper {
@@ -51,43 +53,65 @@
   }
   .message {
     width: 187px;
-    height: 90px;
-    @include text-small();
-    font-size: 16px;
+    // height: 90px;
     background: $line-gradient;
     border-radius: $corner-radius-small-medium;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8px;
-    padding-bottom: 6px;
+    padding: 17px;
+    padding-bottom: 13px;
     box-sizing: border-box;
-    word-break: break-word;
   }
+
+  .message {
+    width: 187px;
+    height: 71px;
+    position: relative;
+    background: $line-gradient;
+    border-radius: $corner-radius-small-medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 17px 13px;
+    box-sizing: border-box;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -27%;
+      left: 70%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 20px;
+      background: linear-gradient(to top, #579aff, #574dcc);
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+  }
+
   .img_text {
     margin: 0;
 
-    @include text-small();
+    @include text-mobile-medium();
     color: $color-white;
-    font-size: 16px;
     text-align: center;
     max-width: 100%;
     word-break: break-word;
   }
 
   .button {
-    @include button(360px,70px);
+    @include button(360px, 70px);
   }
-  .polygon {
-    width: 20px;
-    height: 26px;
-    margin-left: 60%;
-    background: linear-gradient(to top, #579aff, #574dcc);
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  }
+  // .polygon {
+  //   width: 20px;
+  //   height: 26px;
+  //   margin-left: 60%;
+  //   background: linear-gradient(to top, #579aff, #574dcc);
+  //   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  // }
   .gradient_rectangle {
     position: absolute;
-    top: 5445px;
+    top: 5345px;
     left: 1285px;
     border-radius: 253px;
     width: 502px;
