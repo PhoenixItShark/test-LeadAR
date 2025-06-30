@@ -32,5 +32,6 @@
   }
   .button {
     @include button(100%, 60px);
+    @include text-button-mobile_1();
   }
 }

@@ -83,7 +83,7 @@
 
   .button {
     @include button(80%, 60px, 280px) {
-      @include text-mobile-bold();
+      @include text-button-mobile_1();
       color: $color-white;
       position: absolute;
       top: 92.5%;
