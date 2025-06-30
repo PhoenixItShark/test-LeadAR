@@ -38,7 +38,7 @@
   }
 
   .img {
-    width: 105%;
+    width: 110%;
     height: 100%;
     object-fit: cover;
   }
@@ -46,7 +46,7 @@
   .message {
     position: absolute;
     top: 67%; // подкорректируй при необходимости
-    left: 52.5%;
+    left: 55%;
     transform: translate(-50%, -100%);
     width: 92px;
     padding: 8px;
@@ -94,12 +94,12 @@
 
   .gradient_rectangle {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 120%;
-    height: 90%;
-    filter: blur(100px);
+    width: 100%;
+    height: 50%;
+    filter: blur(80px);
     background: linear-gradient(180deg, #3494e6 0%, #ec6ead 100%);
     z-index: -999;
   }

@@ -4,13 +4,16 @@
 
 @include desktop() {
   .feature_container {
+    margin-top: 170px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Simplified margin syntax for brevity */
-    margin: 170px 315px 0px 315px;
   }
-
+  .features_wrapper{
+    padding: 0 50px;
+    max-width: 1300px;
+    
+  }
   .card_wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -33,8 +36,8 @@
     box-sizing: border-box;
     border-radius: $corner-radius-medium_big;
     background-color: $color-white;
-    width: 400px;
-    height: 250px;
+    max-width: 400px;
+    max-height: 250px;
     display: flex;
     padding: 35px;
     flex-direction: column;

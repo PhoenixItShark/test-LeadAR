@@ -10,9 +10,11 @@ import girl3 from "@/assets/img/3girl.png";
 import girl4 from "@/assets/img/4girl.png";
 import girl5 from "@/assets/img/5girl.png";
 import girl6 from "@/assets/img/img1.png";
+import girl7 from "@/assets/img/7girl.png";
+import girl8 from "@/assets/img/8girl.png";
 
 const Community = () => {
-  const slides = [girl1, girl2, girl3, girl4, girl5, girl6];
+  const slides = [girl1, girl2, girl3, girl4, girl5, girl6, girl7, girl8];
   function handleClick(e) {
     document.getElementById("header").scrollIntoView({ behavior: "smooth" });
   }
