@@ -27,14 +27,13 @@ const Start = () => {
           >
             Sign up now
           </button>
-          <div className={css.message_wrapper}>
-            <span className={css.polygon}></span>
+          {/* <div className={css.message_wrapper}> */}
             <div className={css.message}>
               <p className={css.img_text}>
                 free communication with streamers here
               </p>
             </div>
-          </div>
+          {/* </div> */}
         </div>
       </div>
       <div className={css.gradient_rectangle}></div>
