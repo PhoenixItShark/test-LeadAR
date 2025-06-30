@@ -37,7 +37,7 @@ const cards = [
 
 const Features = () => {
   const isMobile = useIsMobile();
-  if (isMobile <= "1280") {
+  if (isMobile <= "1279") {
     return (
       <section id='features' className={`${css.feature_container} container`}>
         <p className={css.title}>Why join us?</p>
@@ -72,7 +72,7 @@ const Features = () => {
   }
   return (
     <section id='features' className={`${css.feature_container} container`}>
-      <div className={css.wrapper}>
+      <div className={css.features_wrapper}>
         <p className={css.title}>Why join us?</p>
         <div className={css.card_wrapper}>
           <div className={css.card}>
@@ -123,7 +123,7 @@ const Features = () => {
             </p>
           </div>
         </div>
-      </div>
+        </div>
       <div className={css.gradient_rectangle}></div>
       <div className={css.gradient_rectangle}></div>
     </section>

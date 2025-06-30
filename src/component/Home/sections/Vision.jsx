@@ -7,7 +7,7 @@ const Vision = () => {
   }
   return (
     <section className={`${css.vision_container} container`}>
-      {/* <div className={css.vision_wrapper}> */}
+      <div className={css.vision_wrapper}>
         {/* <div className={css.content_wrapper}> */}
         <div className={css.text_wrapper}>
           <p className={css.title}>
@@ -38,7 +38,7 @@ const Vision = () => {
           {/* </div> */}
         </div>
         {/* </div> */}
-      {/* </div> */}
+      </div>
       <div className={css.gradient_rectangle}></div>
     </section>
   );

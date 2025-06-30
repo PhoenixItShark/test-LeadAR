@@ -8,7 +8,10 @@ import { useIsMobile } from "@/lib/utils/isMobile";
 
 const Header = () => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
-  const isMobile = useIsMobile();
+  const width = useIsMobile();
+
+  const isMobile = width >= 320 && width <= 1279;
+  console.log(isMobile)
   function handleClick() {
     setIsPasswordVisible(!isPasswordVisible);
   }
@@ -28,12 +31,12 @@ const Header = () => {
         <div className={css.main_wrapper}>
           <div className={css.text_wrapper}>
             <p className={css.title}>
-              {!isMobile
+              {isMobile
                 ? "It’s a dedicated space for your bold fantasies!"
                 : "It’s a hot place for your streaming fantasy."}
             </p>
             <p className={css.subTitle}>
-              {!isMobile
+              {isMobile
                 ? "Hundreds of attractive admirers are already waiting for you here. Don’t delay – dive into the world of streaming, flirting and hot communication right now!"
                 : "It’s a free space for watching streams and chatting with alluring people."}
             </p>
