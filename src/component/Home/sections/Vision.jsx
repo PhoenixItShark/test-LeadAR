@@ -7,7 +7,7 @@ const Vision = () => {
   }
   return (
     <section className={`${css.vision_container} container`}>
-      <div className={css.vision_wrapper}>
+      {/* <div className={css.vision_wrapper}> */}
         {/* <div className={css.content_wrapper}> */}
         <div className={css.text_wrapper}>
           <p className={css.title}>
@@ -28,17 +28,17 @@ const Vision = () => {
         </div>
         <div className={css.img_wrapper}>
           <img src={img} alt='handHoldingiPhone' className={css.img} />
-          <div className={css.message_wrapper}>
+          {/* <div className={css.message_wrapper}> */}
             {/* <span className={css.polygon}></span> */}
             <div className={css.message}>
               <p className={css.img_text}>
                 free communication with streamers here
               </p>
             </div>
-          </div>
+          {/* </div> */}
         </div>
         {/* </div> */}
-      </div>
+      {/* </div> */}
       <div className={css.gradient_rectangle}></div>
     </section>
   );

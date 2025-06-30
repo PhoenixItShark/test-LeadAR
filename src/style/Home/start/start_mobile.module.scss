@@ -6,94 +6,101 @@
   .start_container {
     margin-top: 93px;
     width: 100%;
-    height: 100%;
   }
+
   .start_wrapper {
     display: flex;
     flex-direction: column;
-    gap: 16px;
     width: 100%;
     height: 100%;
+    align-items: center;
   }
 
   .text_wrapper {
     text-align: center;
     width: 100%;
   }
-  .img_wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
 
   .title {
     @include text-bold();
     margin-bottom: 20px;
   }
+
   .subTitle {
     @include text-mobile-medium();
   }
 
+  .img_wrapper {
+    position: relative;
+    width: 367px;
+    height: 401px;
+    overflow: hidden;
+  }
+
   .img {
-    width: 401px;
+    width: 105%;
     height: 100%;
     object-fit: cover;
-    overflow: hidden;
-    margin-bottom: -5px;
   }
+
+  .message {
+    position: absolute;
+    top: 67%; // подкорректируй при необходимости
+    left: 52.5%;
+    transform: translate(-50%, -100%);
+    width: 92px;
+    padding: 8px;
+    padding-bottom: 7px;
+    font-size: 10px;
+    background: $line-gradient;
+    border-radius: $corner-radius-small-medium;
+    color: $color-white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -9px;
+      left: 68%;
+      transform: translateX(-50%);
+      width: 10px;
+      height: 10px;
+      background: inherit;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+    .img_text {
+      @include text-mobile-medium();
+      font-size: 8px;
+      color: $color-white;
+      text-align: center;
+      word-break: break-word;
+    }
+  }
+
   .button {
     @include button(80%, 60px, 280px) {
       @include text-mobile-bold();
       color: $color-white;
       position: absolute;
-      top: 95.5%;
+      top: 92.5%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
   }
 
-  .message_wrapper {
-    display: flex;
-    flex-direction: column;
-    top: 60%;
-    left: 72%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-  }
-  .message {
-    width: 92px;
-    height: 35px;
-    @include text-small();
-    color: $color-white;
-    font-size: 8px;
-    background: $line-gradient;
-    border-radius: $corner-radius-small-medium;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
-    padding-bottom: 6px;
-    box-sizing: border-box;
-    word-break: break-word;
-  }
-  .polygon {
-    width: 10px;
-    height: 13px;
-    margin-left: 60%;
-    background: linear-gradient(to top, #579aff, #574dcc);
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  }
   .gradient_rectangle {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    // border-radius: 253px;
-    width: 100%;
-    height: 80%;
+    width: 120%;
+    height: 90%;
     filter: blur(100px);
     background: linear-gradient(180deg, #3494e6 0%, #ec6ead 100%);
-    overflow: hidden;
     z-index: -999;
   }
 }
