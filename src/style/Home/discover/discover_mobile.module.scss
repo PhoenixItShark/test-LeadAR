@@ -42,9 +42,8 @@
     gap: 15px;
   }
   .card_text {
-    width:100%;
+    width: 100%;
     margin: 0;
     @include text-mobile-medium();
   }
-
 }

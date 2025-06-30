@@ -3,7 +3,7 @@
 @use "/src/style/utils/media_breakpoint" as *;
 
 @include mobile() {
-    .vision_container {
-        display: none;
-    }
+  .vision_container {
+    display: none;
+  }
 }

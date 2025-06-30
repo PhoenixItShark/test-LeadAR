@@ -40,7 +40,7 @@
     width: 650px;
   }
   .button {
-    @include button(360px,70px);
+    @include button(360px, 70px);
   }
 
   .gradient_rectangle {

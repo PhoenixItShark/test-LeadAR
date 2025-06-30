@@ -3,35 +3,34 @@
 @use "/src/style/utils/media_breakpoint" as *;
 
 @include mobile() {
-    .about_container {
-        margin-top: 61px;
-        width: 100%;
-        // height: 480px;
+  .about_container {
+    margin-top: 61px;
+    width: 100%;
+    // height: 480px;
+  }
+  .about_wrapper {
+    border-radius: $corner-radius-small-medium;
+    background-color: $color-white;
+    padding: 40px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about {
+    @include text-mobile-huge();
+    margin-bottom: 15px;
+  }
+  .text {
+    @include text-mobile-medium();
+    &:nth-child(1) {
+      margin-bottom: 30px;
     }
-    .about_wrapper {
-        border-radius: $corner-radius-small-medium;
-        background-color: $color-white;
-        padding: 40px 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .about {
-        @include text-mobile-huge();
-        margin-bottom: 15px;
-    }
-    .text {
-        @include text-mobile-medium();
-        &:nth-child(1) {
-            
-            margin-bottom: 30px;
-        }
-    }
-    .text_wrapper {
-        margin-bottom: 85px;
-    }
-    .button {
-        @include button(100%, 60px)
-    }
+  }
+  .text_wrapper {
+    margin-bottom: 85px;
+  }
+  .button {
+    @include button(100%, 60px);
+  }
 }

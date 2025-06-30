@@ -13,11 +13,7 @@ const Discover = () => {
       <div className={css.card_wrapper}>
         <div className={css.card}>
           <div className={css.card_item}>
-            <img
-              src={computer_icon}
-              alt='computer icon'
-              className={css.icon}
-            />
+            <img src={computer_icon} alt='computer icon' className={css.icon} />
             <p className={css.card_text}>
               Watching streams of everyone you really like;
             </p>
@@ -34,11 +30,7 @@ const Discover = () => {
         </div>
         <div className={css.card}>
           <div className={css.card_item}>
-            <img
-              src={email2_icon}
-              alt='email2 icon'
-              className={css.icon}
-            />
+            <img src={email2_icon} alt='email2 icon' className={css.icon} />
             <p className={css.card_text}>
               Sweet connection with people you match;
             </p>
@@ -46,11 +38,7 @@ const Discover = () => {
         </div>
         <div className={css.card}>
           <div className={css.card_item}>
-            <img
-              src={skates_icon}
-              alt='skates icon'
-              className={css.icon}
-            />
+            <img src={skates_icon} alt='skates icon' className={css.icon} />
             <p className={css.card_text}>
               New acquaintances with someone who has similar interests;
             </p>
@@ -58,11 +46,7 @@ const Discover = () => {
         </div>
         <div className={css.card}>
           <div className={css.card_item}>
-            <img
-              src={volume_icon}
-              alt='volume icon'
-              className={css.icon}
-            />
+            <img src={volume_icon} alt='volume icon' className={css.icon} />
             <p className={css.card_text}>
               Fascinating hobbies and exciting occupations from people you
               fancy.
@@ -71,7 +55,7 @@ const Discover = () => {
         </div>
       </div>
       <div className={css.gradient_rectangle}></div>
-      <div className={css.gradient_rectangle}></div>  
+      <div className={css.gradient_rectangle}></div>
     </section>
   );
 };

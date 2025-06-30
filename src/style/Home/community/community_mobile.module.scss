@@ -3,14 +3,13 @@
 @use "/src/style/utils/media_breakpoint" as *;
 
 @include mobile() {
-    .community_container {
-        margin-top: 57px;
-    }
+  .community_container {
+    margin-top: 57px;
+  }
   .wrapper {
     display: flex;
     flex-direction: column;
     gap: 25px;
-
   }
   .title {
     @include text-button-desktop_1();
@@ -41,7 +40,7 @@
   }
   .button {
     @include button(100%, 60px);
-    margin-top:30px;
+    margin-top: 30px;
   }
   .gradient_rectangle {
     position: absolute;
@@ -53,5 +52,5 @@
     filter: blur(100px);
     background: linear-gradient(180deg, #3494e6 0%, #ec6ead 100%);
     z-index: -999;
-}
+  }
 }

@@ -46,7 +46,11 @@ const Community = () => {
         </Swiper>
       </div>
       <div className={css.wrapper}>
-        <button onClick={() => handleClick()} className={css.button}>
+        <button
+          type='button'
+          onClick={() => handleClick()}
+          className={css.button}
+        >
           Join for free
         </button>
       </div>
